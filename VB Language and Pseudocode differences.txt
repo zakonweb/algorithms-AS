@@ -1,0 +1,20 @@
+Language Reserved Words:
+Language used is VB.net
+
+language Word		Pseudocode
+Console.readline()	Input/Read
+Console.write()		Output/Print (without Carriage return)
+Console.writeline()	Output (with carriage return)
+
+Integer			Integer		(mostly are not used)
+Single			Real		"  "   "   "    "
+Decimal			Currency	"  "   "   "    "
+String			String/Text	"  "   "   "    "
+Char			Character
+
+DIM			Declare
+AS			:
+=			<-- (Assignment)
+Loop/until		Repeat/Until
+
+Console.readkey()

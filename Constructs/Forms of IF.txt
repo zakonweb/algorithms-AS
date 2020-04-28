@@ -1,0 +1,42 @@
+Form 1:
+            If Choice = 1 Then
+                Call Choice1()
+            Else
+                If Choice = 2 Then
+                    Call Choice2()
+                Else
+                    If Choice = 3 Then
+                        Call Choice3()
+                    Else
+                        If Choice < 0 Or Choice > 3 Then
+                            Console.WriteLine("Invalid choice. Enter between 0..3 ")
+                        End If
+                    End If
+                End If
+            End If
+
+Form 2:
+            If Choice = 1 Then
+                Call Choice1()
+            ElseIf Choice = 2 Then
+                Call Choice2()
+            ElseIf Choice = 3 Then
+                Call Choice3()
+            ElseIf Choice < 0 Or Choice > 3 Then
+                Console.WriteLine("Invalid choice. Enter between 0..3 ")
+            End If
+
+Form 3:
+            If Choice = 1 Then Call Choice1()
+            If Choice = 2 Then Call Choice2()
+            If Choice = 3 Then Call Choice3()
+            If Choice < 0 Or Choice > 3 Then Console.WriteLine("Invalid choice. ")
+
+Form 4:
+            CASE OF Choice
+                0
+                1 : Call Choice1()
+                2 : Call Choice2()
+                3 : Call Choice3()
+                OTHERWISE : Console.WriteLine("Invalid choice. Enter between 0..3 ")
+            END CASE
