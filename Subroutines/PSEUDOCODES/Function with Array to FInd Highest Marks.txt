@@ -1,0 +1,23 @@
+Function ProcessMarks(ByVal Mark: ARRAY [1:20] OF Integer) AS Integer
+DECLARE Highest : INTEGER
+DECLARE Total : Integer
+DECLARE Avg : INTEGER
+DECLARE i : INTEGER
+DECLARE Position : INTEGER
+
+Highest = -1000
+
+For i = 1 to 20
+  IF Mark[i] > Highest 
+    Then 
+      Highest = Mark[i]
+      Position = i
+  Endif
+
+  Total = Total + Mark[i] 
+End For
+Avg = Total/20
+OUTPUT "The average mark is " & Avg & " and the highest mark is " & Highest
+
+Return Position
+End Function

@@ -1,0 +1,21 @@
+DO
+  While Choice <1 OR Choice >5
+    Console.Clear()
+    Console.writeline("1. Addition")
+    Console.writeline("2. Subtraction")
+    Console.writeline("3. Multiplication")
+    Console.writeline("4. Division")
+    Console.writeline("5. Exit")
+  
+    Choice = Console.Readline()
+  End While
+
+  Select Case Choice
+  Case 1: Call Adder()
+  Case 2: Call Subtract()
+  Case 3: Call Mult()
+  Case 4: Call Div()
+  Case 5:
+  Case Else: Console.Writeline("Wrong Choice... Enter 1-5")
+  End Select
+Loop Until Choice = 5
